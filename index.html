@@ -36,7 +36,7 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 5rem;
+            scroll-padding-top: var(--nav-height, 4rem);
         }
 
         body {
@@ -340,5 +340,13 @@
     &copy; Guy Shvoron
 </footer>
 
+<script>
+    function setNavHeight() {
+        var nav = document.querySelector('nav');
+        if (nav) document.documentElement.style.setProperty('--nav-height', nav.offsetHeight + 'px');
+    }
+    setNavHeight();
+    window.addEventListener('resize', setNavHeight);
+</script>
 </body>
 </html>
