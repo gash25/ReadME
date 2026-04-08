@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guy Shvoron — Personal README</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a2e;
+            --heading: #16213e;
+            --accent: #0f3460;
+            --muted: #555;
+            --border: #e0e0e0;
+            --card-bg: #f8f9fa;
+            --section-gap: 2.5rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f0f1a;
+                --text: #d4d4dc;
+                --heading: #e2e2ea;
+                --accent: #7eb8f7;
+                --muted: #9a9ab0;
+                --border: #2a2a3d;
+                --card-bg: #1a1a2e;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 17px;
+        }
+
+        header {
+            background: var(--accent);
+            color: #fff;
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.85;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        main {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        section {
+            margin-bottom: var(--section-gap);
+        }
+
+        h2 {
+            color: var(--heading);
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+
+        h3 {
+            color: var(--heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin: 0.5rem 0 1rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-box {
+            background: var(--card-bg);
+            border-left: 4px solid var(--accent);
+            padding: 1.2rem 1.5rem;
+            border-radius: 0 6px 6px 0;
+            margin: 1rem 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .value-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem;
+        }
+
+        .value-card strong {
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .closing {
+            font-style: italic;
+            color: var(--muted);
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 600px) {
+            header { padding: 3rem 1.5rem 2rem; }
+            header h1 { font-size: 1.8rem; }
+            main { padding: 1.5rem 1rem 3rem; }
+            h2 { font-size: 1.35rem; }
+            nav ul { justify-content: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Guy Shvoron</h1>
+    <p>Personal README</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-i-work">How I Work</a></li>
+        <li><a href="#values">What I Value</a></li>
+        <li><a href="#engineering">Engineering Culture</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome! If you're reading this, we probably work together (or are about to). This document is meant to give you a head start on understanding how I think, what I value, and how I like to work. It's a living document &mdash; I update it as I learn and grow. I'd love for you to hold me accountable to what's written here, and I encourage you to share feedback if your experience with me doesn't match what you read.</p>
+    </section>
+
+    <!-- HOW I WORK WITH YOU -->
+    <section id="how-i-work">
+        <h2>How I Work With You</h2>
+
+        <h3>Availability</h3>
+        <p>I'm here for you &mdash; even if my calendar looks packed or I'm not at my desk. If you need me, call or text me and I'll get back to you as soon as I can.</p>
+        <p>I also have a habit of reading all my emails. Unless it's a particularly long one, I'll read and respond within a day. For anything urgent, whichever messaging system we agree upon or a phone call is the fastest way to reach me.</p>
+
+        <h3>1:1s</h3>
+        <p>This meeting is at the top of my priorities. I aim to have a weekly meeting with all my direct reports, and at least every half a year with people who report to me indirectly.</p>
+        <div class="highlight-box">
+            <ul>
+                <li><strong>You own the agenda.</strong> Bring whatever is on your mind.</li>
+                <li>I aim to <em>not</em> have it as a status meeting &mdash; I use async status updates for that.</li>
+                <li>This is your space to talk about what excites you, what frustrates you, what you want to improve in yourself, in me, or in the company.</li>
+                <li><strong>Bring the good stuff too.</strong> I want to hear what's going wrong, but I equally want to hear what's going well &mdash; wins, things you're proud of, moments that energized you. Both are valuable signals.</li>
+            </ul>
+        </div>
+
+        <h3>Feedback</h3>
+        <p>I'm a strong believer in not keeping things to ourselves, but instead respectfully and humbly making them known. Feedback should be timely &mdash; don't save things up for months. I follow three guiding principles:</p>
+        <div class="values-grid">
+            <div class="value-card"><strong>Safety</strong> &mdash; You should feel safe giving and receiving feedback.</div>
+            <div class="value-card"><strong>Openness</strong> &mdash; Neither you nor I should be defensive. We listen first, then reflect.</div>
+            <div class="value-card"><strong>Impact</strong> &mdash; Feedback should lead to meaningful change, not just be venting.</div>
+        </div>
+        <p>I will give you direct, honest feedback, and I ask that you do the same for me.</p>
+
+        <h3>Total Openness</h3>
+        <p>You'll learn quickly that I'm a very open person. I believe we all share common goals and are fundamentally on the same team. Clear, proactive communication is essential &mdash; not just when things go well, but especially when they don't. I highly appreciate it when you return the favor. Transparency builds trust.</p>
+    </section>
+
+    <!-- WHAT I VALUE -->
+    <section id="values">
+        <h2>What I Value</h2>
+
+        <h3>Culture Rules</h3>
+        <div class="values-grid">
+            <div class="value-card"><strong>Zero Asshole Rule.</strong> No matter how talented or productive someone is &mdash; toxic behavior is never acceptable. We treat each other with respect. Always.</div>
+            <div class="value-card"><strong>No Politics.</strong> We don't form factions or hoard information. We're all on the same team, working toward the same goals.</div>
+            <div class="value-card"><strong>Maximum Transparency.</strong> Information should be visible, upfront, and accessible to everyone. If in doubt, over-communicate. We'd rather share too much than too little.</div>
+            <div class="value-card"><strong>No Ego.</strong> We don't cling to positions to "win." We don't challenge just to challenge. We pursue the best answer, not the loudest voice. Being wrong is fine &mdash; refusing to consider that you might be is not.</div>
+        </div>
+
+        <h3>Efficiency Is My North Star</h3>
+        <p>I adore efficiency &mdash; it's my number one goal. Every process, every tool, every meeting should earn its place. If something is slow, wasteful, or unnecessary, I want us to fix it or remove it. This applies to how we write code, how we communicate, how we run our ceremonies, and how we make decisions.</p>
+        <p>Efficiency doesn't mean cutting corners &mdash; it means maximizing the value we deliver relative to the effort we spend. It's the lens I apply to nearly everything.</p>
+
+        <h3>Intellectual Honesty</h3>
+        <p>Changing your mind in light of new information is not a weakness &mdash; it's a strength. I deeply respect people who can say "I was wrong" or "I see it differently now." I do that a lot.</p>
+        <p>Clinging to an opinion purely out of ego is something I consider fundamentally counterproductive. We optimize for being right at the end, not right at the start.</p>
+
+        <h3>Ownership (Champions)</h3>
+        <p>I strongly believe that every initiative, project, story, or action item should have a clear owner &mdash; and that person knows it, drives it, and sees it through to completion. The owner is expected to drive all relevant stakeholders towards achieving the goal. If something has no champion, it has no momentum.</p>
+        <p>Ownership means seeing things through to the absolute end.</p>
+
+        <h3>Accountability</h3>
+        <p>If you commit to an estimate or a deadline, do your absolute best to honor it. I value consistent, pragmatic delivery &mdash; avoid over-engineering as much as under-delivering.</p>
+        <p>Quality is not optional. We take pride in our craft.</p>
+        <p>That said, I understand that things come up &mdash; unplanned work, unexpected complexity, life. When things go off track, I value early communication over last-minute surprises. Come to me early and we'll figure it out together.</p>
+
+        <h3>Us Over Me</h3>
+        <p>We are a team, not a collection of individuals. I think about team goals, team wins, and team growth. Our strength comes from working together. I celebrate collective success over individual heroics &mdash; and I expect us to lift each other up.</p>
+    </section>
+
+    <!-- ENGINEERING CULTURE -->
+    <section id="engineering">
+        <h2>Engineering Culture I Foster</h2>
+
+        <h3>Be a Professional</h3>
+        <p>Professionalism means taking your craft seriously and showing up with intention.</p>
+        <ul>
+            <li><strong>Don't say "I don't know" and stop there.</strong> Say "I need to check" or "Can you help me learn this?" Curiosity and initiative are always more valuable than a shrug.</li>
+            <li><strong>Ask "why?"</strong> Understand the reasoning behind what you're asked to do. Context makes you a better engineer and a better decision-maker.</li>
+            <li><strong>Challenge decisions.</strong> If something doesn't make sense to you, speak up. I thrive in an environment where people push back thoughtfully. A respectful challenge makes our decisions stronger.</li>
+            <li><strong>Prefer the right solution over the fast one.</strong> When you have the choice, lean toward the best professional solution rather than the quickest shortcut. We build things to last.</li>
+        </ul>
+
+        <h3>Push Ideas and Improvements</h3>
+        <p>I need you to actively bring ideas, improvements, and suggestions to the table &mdash; new technologies, better processes, architectural changes, workflow tweaks. Don't wait to be asked. If you see something that could be better, say so.</p>
+        <p>I appreciate this deeply, and I promise every idea gets genuine consideration.</p>
+
+        <h3>AI as a Tool, You as the Professional</h3>
+        <p>AI is a powerful accelerator and I expect you to use it. Leverage it for coding, research, brainstorming &mdash; wherever it makes you more effective.</p>
+        <div class="highlight-box">
+            <p>But understand this clearly: <strong>you own your code.</strong> AI is your tool; you are the accountable engineer. That means:</p>
+            <ul>
+                <li>You understand every line you commit. If you can't explain it, don't ship it.</li>
+                <li>PRs must be digestible by the reviewer. AI can generate a lot of code quickly &mdash; that's not an excuse for sprawling, hard-to-review pull requests. Break things down, keep diffs clean, and make your reviewer's job reasonable.</li>
+                <li>You are responsible for correctness, quality, edge cases, and maintainability &mdash; regardless of how the code was produced.</li>
+            </ul>
+        </div>
+
+        <h3>Can-Do Attitude</h3>
+        <p>We are builders and problem solvers. Our work often involves ambiguity and complexity &mdash; I expect you to navigate it, not freeze. Some features may look hard to implement, but most things are doable when you set your mind and ambition to it.</p>
+        <p>This doesn't mean saying yes to everything &mdash; it means approaching challenges with creativity, determination, and confidence that we'll find a way.</p>
+
+        <h3>Growth &amp; Innovation</h3>
+        <p>I think we have the best job in the world. Our industry evolves constantly, and every day brings new technologies, patterns, and ideas.</p>
+        <ul>
+            <li><strong>Think big.</strong> Come up with bold ideas &mdash; new technologies, open-source solutions, architectural improvements. I promise I'll consider them, no matter how far-fetched they seem.</li>
+            <li><strong>Step outside your comfort zone.</strong> Don't keep doing only what you're used to. If you're a backend developer, explore the frontend &mdash; and vice versa. Growth happens at the edges.</li>
+            <li><strong>Bring unconventional ideas.</strong> Feel comfortable proposing creative or even "crazy" solutions. That's how we grow as a team.</li>
+            <li><strong>Own your technical gaps</strong> and actively work to close them. Continuous learning is part of the job.</li>
+        </ul>
+
+        <h3>Lean Meetings</h3>
+        <p>Not zero meetings &mdash; but let's minimize waste. Protect your focus time and respect others' time.</p>
+        <ul>
+            <li>If something can be resolved with a quick chat, call, or message &mdash; prefer that over a meeting.</li>
+            <li>If a requirement is unclear, go talk to the right person directly rather than scheduling a 30-minute meeting.</li>
+            <li>Every meeting should have a purpose, an agenda, and ideally, an outcome.</li>
+        </ul>
+
+        <h3>Clear Methodology</h3>
+        <p>I believe agile is valuable as long as we commit to the process we select, continuously improve it, and don't treat it as religion. I hold high regard for the transparency it delivers &mdash; to stakeholders and to ourselves.</p>
+        <p>I'm always open to adapting our process to what works best for the team, as long as we inspect and improve along the way.</p>
+    </section>
+
+    <p class="closing">This is a living document. If something here doesn't match your experience working with me, that's a conversation I want to have.</p>
+
+</main>
+
+<footer>
+    &copy; Guy Shvoron
+</footer>
+
+</body>
+</html>
